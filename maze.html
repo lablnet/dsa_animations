@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Muhammad Umer Farooq" />
+    <title>MAZE</title>
+</head>
+<body>
+<div class="header">
+    <h1>MAZE</h1>
+</div>
+<a href="javascript:void(0)" id="dfs">Depth First Search</a>
+<a href="javascript:void(0)" id="bfs" >Breath First Search</a>
+<div class="board"></div>
+<footer>
+    <h4>
+        Made with  💕 by Umer  <a href="https://github.com/Lablnet/TicTacToe">Source</a>
+    </h4>
+</footer>
+</body>
+<script>
+    if (localStorage.getItem("algo") === null) {
+        localStorage.setItem("algo", "dfs")
+    }
+    document.getElementById("dfs").onclick = () => {
+        localStorage.setItem("algo", "dfs")
+        location.reload()
+    }
+    document.getElementById("bfs").onclick = () => {
+        localStorage.setItem("algo", "bfs")
+        location.reload()
+    }
+
+</script>
+<script src="public/bundle.js" charset="utf-8"></script>
+</html>
