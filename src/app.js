@@ -1,10 +1,6 @@
-// main app js file.
 import './scss/App.scss';
-
 import {Maze} from "./Maze.js"
 import {Draw} from "./html/Draw"
-
-import Queue from "./Queue/Queue";
 
 let d = new Draw()
 d.draw()

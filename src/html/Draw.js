@@ -1,5 +1,6 @@
 import {Problem} from "../Maze"
 
+// Draw board and mark with color.
 class Draw {
     constructor() {
         let problem = new Problem()

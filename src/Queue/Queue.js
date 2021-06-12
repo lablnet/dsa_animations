@@ -1,6 +1,7 @@
 import Stack from "../Stack/Stack.js"
 
-export default class Queue extends Stack {
+// Queue
+class Queue extends Stack {
     constructor()
     {
         super();

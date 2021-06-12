@@ -1,3 +1,4 @@
+// Stack
 export default class Stack {
     constructor() {
         this.top = -1
