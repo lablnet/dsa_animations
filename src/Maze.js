@@ -82,12 +82,12 @@ class Maze extends Problem {
                 try {
                     if (maze[i][j] === 'A') {
                         this.start = [i, j]
-                        this.draw.mark(i, j, 'green')
+                        this.draw.mark(i, j, 'lightgreen')
                         row.push(false)
                     } else if (maze[i][j] === 'Z') {
                         this.goal = [i, j]
                         row.push(false)
-                        this.draw.mark(i, j, 'blue')
+                        this.draw.mark(i, j, 'lightblue')
                     } else if (maze[i][j] === ' ') {
                         row.push(false)
                     } else {
